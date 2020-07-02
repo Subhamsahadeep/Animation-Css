@@ -4,6 +4,7 @@ body{
     border: 1px solid black;
     background: #000;
 }
+/* }
 .intro{
     display: flex;
     justify-content: center;
@@ -36,15 +37,26 @@ body{
     }
 }
 
-.container{
-    position: absolute;
-    top: 20%;
+.container-main{
+    position: relative;
     left: 50%;
     width: 100%;
     transform: translate(-50%,50%);
     color: #fff;
+
+    border: 1px solid red;
+   
 }
-.container span{
+.image{
+    position: flex;
+    width: 100%;
+    top: 5%;
+    background-image: url("images/.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+    height: 50vh;
+}
+.container-main span{
     display: block;
     text-transform: uppercase;
     text-align: center;
@@ -79,4 +91,4 @@ body{
         
         margin-bottom: -15px;
     }
-}
+} */
