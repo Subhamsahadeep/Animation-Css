@@ -1,8 +1,7 @@
 body{
     margin: 0;
     padding: 0em;
-    border: 1px solid black;
-    background: #000;
+    background: #000000;
 }
 @media only screen and (max-width: 600px){
     .background{
@@ -14,6 +13,10 @@ body{
     }
     .first-col{
         order: 2;
+    }
+    .line{
+        font-size: 10px;
+        margin: 0;
     }
 }
 .background{
@@ -30,9 +33,9 @@ body{
 }
 
 
-.navbar a{
+.navbar div{
     font-family: monospace;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 .container-main{
     position: relative;
@@ -86,4 +89,95 @@ body{
         
         margin-bottom: -15px;
     }
+}
+.navbar-bar-colour-custom{
+    background: #000000;
+}
+.navbar-dark .navbar-toggler{
+    border-color: transparent;
+}
+
+.line{
+    position: relative;
+    border-right: 2px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    width : 24em;
+    margin: 0 auto;
+}
+
+/* Animation Typewriter */
+.name-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 700ms steps(40) 10 normal;
+}
+
+@keyframes typewriter{
+    from {
+        width: 0em;
+    }
+    to{
+        width: 24em;
+        border-right: none;
+    }
+}
+@keyframes blinkTextCursor{
+    from {
+        border-right-color: rgba(255, 255, 255,0.75);
+    }
+    to{
+        border-right-color: transparent;
+        border-right: transparent;
+    }
+}
+
+
+.menu-btn{
+    width: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn .menu-btn-burger{
+    width: 20px;
+    height: 3px;
+    background: #ffffff ;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn .menu-btn-burger::before,
+.menu-btn .menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #ffffff ;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-6px);
+}
+
+.menu-btn-burger::after {
+    transform: translateY(6px);
+}
+
+/* Animation of Menu Bar */
+.menu-btn.open .menu-btn-burger{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn-burger::before{
+    transform: rotate(45deg) translate(35px,-35px);
+}
+.menu-btn.open .menu-btn-burger::after{
+    transform: rotate(-45deg) translate(35px,35px);
 }

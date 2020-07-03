@@ -13,14 +13,17 @@
 <body>
     <!-- Navbar -->
    
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background-color: #000000;">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar navbar-bar-colour-custom">
+        <div class="navbar-brand line name-typewriter">Subham Saha - Software Developer</div>
+        <!-- <button class="navbar-toggler" type="button" > -->
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <div class="menu-btn navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="menu-btn-burger active"></div>
+          </div>
+       
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
             </li>
@@ -36,6 +39,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">SKILLS</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -44,10 +50,10 @@
    <div class="container-fluid">
        <div class="row">
            <div class="col-sm-12 col-md-6 first-col"> 
-               <div class="container-main">
+               <!-- <div class="container-main">
                     <span class="text1"> ABOUT ME </span>
                     <span class="text2"> Allow me to introduce myself</span>
-                </div>
+                </div> -->
            </div>
            <div class="col-sm-12 col-md-6 background">
             <img src="images/color-background-web.jpg"> 
@@ -55,5 +61,6 @@
         </div>
        </div>
    </div> 
+   <script src="portfolio.js"></script>
 </body>
 </html>
