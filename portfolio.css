@@ -37,65 +37,6 @@ body{
     font-family: monospace;
     letter-spacing: 1.5px;
 }
-.container-main{
-    position: relative;
-    left: 50%;
-    top: 30%;
-    width: 100%;
-    transform: translate(-50%,50%);
-    color: #fff;
-}
-.image{
-    position: flex;
-    width: 100%;
-    top: 5%;
-    background-image: url("images/.jpg");
-    background-repeat: no-repeat, repeat;
-    background-size: contain;
-    height: 50vh;
-}
-.container-main span{
-    display: block;
-    text-transform: uppercase;
-    text-align: center;
-}
-.text1{
-    letter-spacing: 10px;
-    font-size: 2.7em;
-    font-family: monospace;
-    margin-bottom: 15px;
-    background-color: black;
-    position: relative;
-    animation: text1 4s 1;
-}
-.text2{
-    color: aquamarine;
-    letter-spacing: 4px;
-    font-size: 10px;
-    background-color: black;
-}
-@keyframes text1{
-    0%{
-        color: #000;
-        margin-bottom: -15px;
-    }
-    40%{
-        letter-spacing: 25px;
-        
-        margin-bottom: -15px;
-    }
-    70%{
-        letter-spacing: 10px;
-        
-        margin-bottom: -15px;
-    }
-}
-.navbar-bar-colour-custom{
-    background: #000000;
-}
-.navbar-dark .navbar-toggler{
-    border-color: transparent;
-}
 
 .line{
     position: relative;
@@ -109,7 +50,7 @@ body{
 /* Animation Typewriter */
 .name-typewriter {
     animation: typewriter 4s steps(40) 1s 1 normal both,
-    blinkTextCursor 700ms steps(40) 10 normal;
+    blinkTextCursor 500ms steps(40) 10 normal;
 }
 
 @keyframes typewriter{
@@ -180,4 +121,39 @@ body{
 }
 .menu-btn.open .menu-btn-burger::after{
     transform: rotate(-45deg) translate(35px,35px);
+}
+
+.about-section{
+    position: relative;
+    top: 30%;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-section .hello-class{
+    border-left:5px solid #c4b9b3;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: helloBackground 4s 1 linear;
+}
+.about-section .hello-class .div-hello{
+    color: #ffffff;
+    width: 120px;
+}
+@keyframes helloBackground{
+    0% {
+        width: 0%;
+    }
+    50%{
+        width: 60px;
+        background-color:#6b6866;
+    }
+    100% {
+        width: 120px;
+        background-color:none;
+    }
+}
+.about-section .about-me{
+    color: #c4b9b3;
+    padding-left: 12px;
 }
